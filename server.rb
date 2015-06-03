@@ -15,7 +15,7 @@ if ARGV[0] == "start"
   s = UDPSocket.new
   pid = Process.pid
   s.bind('0.0.0.0', 4042)
-  client = Mysql2::Client.new(:host => 'localhost', :username => 'root', :password => 'Max1209', :database => 'gts')
+  client = Mysql2::Client.new(:host => 'localhost', :username => 'USUARIO', :password => 'PASSWORD', :database => 'BASEDEDATOS')
   puts "==Iniciando Server=="
   puts "==PID: #{pid}=="
   open( '/tmp/server.pid', 'w') do |f|
